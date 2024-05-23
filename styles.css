@@ -76,3 +76,20 @@ input {
   border-radius: 5px;
   margin-top: 30px;
 }
+
+.erro {
+  padding: 10px;
+  color: rgb(194, 23,23);
+}
+
+button,
+.login-btn,
+.logout-btn {
+  transition: 0.2s linear;
+}
+
+button:hover,
+.login-btn:hover,
+.logout-btn:hover {
+  filter: brightness(0.9);
+}
