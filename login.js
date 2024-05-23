@@ -2,7 +2,7 @@ const form = document.querySelector("form");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-
+  const errorElement = document.querySelector(".erro");
   const username = form.username.value;
   const password = form.password.value;
 
@@ -11,7 +11,7 @@ form.addEventListener("submit", (e) => {
   if (authenticated) {
     window.location.href = "logout.html";
   } else {
-    alert("Digite os campos corretamente!");
+    errorElement.innerHTML = "Dados incorretos";
   }
 });
 
