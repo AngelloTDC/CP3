@@ -3,8 +3,8 @@ const form = document.querySelector("form");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   const errorElement = document.querySelector(".erro");
-  const username = form.idEmail;
-  const password = form.idSenha;
+  const username = document.getElementById("idEmail").value;
+  const password = document.getElementById("idSenha").value;
 
   const authenticated = authentication(username, password);
 
