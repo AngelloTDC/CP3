@@ -11,7 +11,10 @@ form.addEventListener("submit", (e) => {
   if (authenticated) {
     window.location.href = "logout.html";
   } else {
-    errorElement.innerHTML = "Dados incorretos";
+    errorElement.innerHTML="Dados incorretos";
+    setTimeout(() => {
+      errorElement.innerHTML = "";
+    }, 2000);
   }
 });
 
