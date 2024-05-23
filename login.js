@@ -15,10 +15,26 @@ form.addEventListener("submit", (e) => {
   }
 });
 
+let listaUsuarios = [
+  { emailUsuario: "admin@email.com", senhaUsuario: "admin" },
+  { emailUsuario: "leo@email.com", senhaUsuario: "123" },
+  { emailUsuario: "angello@email.com", senhaUsuario: "123" },
+  { emailUsuario: "victor@email.com", senhaUsuario: "123" },
+  { emailUsuario: "usuario1@email.com", senhaUsuario: "123" },
+];
+
 function authentication(username, password) {
-  if (username === "admin@email.com" && password === "admin") {
-    return true;
-  } else {
-    return false;
+  for (let x = 0; x < listaUsuarios.length; x++) {
+    if (
+      listaUsuarios[x].emailUsuario == username &&
+      listaUsuarios[x].senhaUsuario == password
+    ) {
+      localStorage.setItem(
+        "usuario-validado",
+        JSON.stringify(listaUsuarios[x])
+      );
+      return true;
+    }
   }
+  return false;
 }
