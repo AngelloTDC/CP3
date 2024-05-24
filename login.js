@@ -37,7 +37,7 @@ form.addEventListener("submit", (e) => {
     acessoElement.innerHTML = "Bem-vindo";
     setTimeout(() => {
       acessoElement.innerHTML = "";
-      window.location.href = "logout.html"; 
+      window.location.href = "index.html"; 
     }, 5000);
   } else {
     errorElement.innerHTML = "Dados incorretos";
