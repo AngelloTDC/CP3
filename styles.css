@@ -82,6 +82,11 @@ input {
   color: rgb(194, 23,23);
 }
 
+.acesso {
+  padding: 10px;
+  color: green;
+}
+
 button,
 .login-btn,
 .logout-btn {
