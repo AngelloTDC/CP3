@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (userInfo) {
         const userEmail = userInfo.emailUsuario;
         const userNome = userInfo.nomeUsuario;
-        const mensagemBemvindo = `Bemvindo, ${userNome} ! ${userEmail}`;
+        const mensagemBemvindo = `Olá, ${userNome}! Você entrou com o email: ${userEmail}`;
         const bemVindo = document.querySelector('.registro');
         bemVindo.textContent = mensagemBemvindo;
     }
