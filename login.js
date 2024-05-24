@@ -1,9 +1,9 @@
 let listaUsuarios = [
-  { emailUsuario: "admin@email.com", senhaUsuario: "admin" },
-  { emailUsuario: "leo@email.com", senhaUsuario: "123" },
-  { emailUsuario: "angello@email.com", senhaUsuario: "123" },
-  { emailUsuario: "victor@email.com", senhaUsuario: "123" },
-  { emailUsuario: "usuario1@email.com", senhaUsuario: "123" },
+  { nomeUsuario: "admin", emailUsuario: "admin@email.com", senhaUsuario: "admin"},
+  { nomeUsuario: "Leo", emailUsuario: "leo@email.com", senhaUsuario: "123" },
+  { nomeUsuario: "Angello", emailUsuario: "angello@email.com", senhaUsuario: "123" },
+  { nomeUsuario: "Victor", emailUsuario: "victor@email.com", senhaUsuario: "123" },
+  { nomeUsuario: "Usuario1", emailUsuario: "usuario1@email.com", senhaUsuario: "123" },
 ];
 
 function authentication(username, password) {

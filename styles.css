@@ -98,3 +98,8 @@ button:hover,
 .logout-btn:hover {
   filter: brightness(0.9);
 }
+
+.registro{
+  font-size: 20px;
+  font-weight: bold;
+}
